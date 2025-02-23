@@ -22,7 +22,6 @@ import org.fortune.systemui.qs.tiles.CellularTile
 import org.fortune.systemui.qs.tiles.DataSwitchTile
 import org.fortune.systemui.qs.tiles.DcDimmingTile
 import org.fortune.systemui.qs.tiles.HeadsUpTile
-import org.fortune.systemui.qs.tiles.PowerShareTile
 import org.fortune.systemui.qs.tiles.SoundTile
 import org.fortune.systemui.qs.tiles.UsbTetherTile
 import org.fortune.systemui.qs.tiles.WifiTile
@@ -70,12 +69,6 @@ interface FortuneQSModule {
     @IntoMap
     @StringKey(HeadsUpTile.TILE_SPEC)
     fun bindHeadsUpTile(headsUpTile: HeadsUpTile): QSTileImpl<*>
-
-    /** Inject PowerShareTile into tileMap in QSModule */
-    @Binds
-    @IntoMap
-    @StringKey(PowerShareTile.TILE_SPEC)
-    fun bindPowerShareTile(powerShareTile: PowerShareTile): QSTileImpl<*>
 
     /** Inject WifiTile into tileMap in QSModule */
     @Binds

@@ -19,7 +19,6 @@ android_library {
     ],
     static_libs: [
         "SystemUI-core",
-        "vendor.aospa.powershare-V1-java",
     ],
     manifest: "AndroidManifest.xml",
     javacflags: ["-Adagger.fastInit=enabled"],
