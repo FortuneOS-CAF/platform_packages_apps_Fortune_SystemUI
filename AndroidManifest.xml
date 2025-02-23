@@ -18,7 +18,7 @@
 
     <application
         tools:replace="android:appComponentFactory"
-        android:appComponentFactory="co.aospa.systemui.ParanoidSystemUIAppComponentFactory">
+        android:appComponentFactory="org.fortune.systemui.FortuneSystemUIAppComponentFactory">
 
         <!-- Content goes here -->
 

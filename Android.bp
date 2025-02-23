@@ -8,7 +8,7 @@ package {
 }
 
 android_library {
-    name: "ParanoidSystemUI-core",
+    name: "FortuneSystemUI-core",
     srcs: [
         "src/**/*.kt",
         "src/**/*.java",
@@ -28,13 +28,13 @@ android_library {
 }
 
 android_app {
-    name: "ParanoidSystemUI",
+    name: "FortuneSystemUI",
     defaults: [
         "platform_app_defaults",
         "SystemUI_optimized_defaults",
     ],
     static_libs: [
-        "ParanoidSystemUI-core",
+        "FortuneSystemUI-core",
     ],
     resource_dirs: [],
     use_embedded_native_libs: true,
@@ -52,7 +52,7 @@ android_app {
     },
     required: [
         "privapp_whitelist_com.android.systemui",
-        "privapp_whitelist_co.aospa.systemui",
+        "privapp_whitelist_org.fortune.systemui",
         "wmshell.protolog.json.gz",
     ],
     overrides: [

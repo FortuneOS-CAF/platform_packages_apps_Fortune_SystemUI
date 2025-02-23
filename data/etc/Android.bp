@@ -4,9 +4,9 @@
 //
 
 prebuilt_etc {
-    name: "privapp_whitelist_co.aospa.systemui",
+    name: "privapp_whitelist_org.fortune.systemui",
     system_ext_specific: true,
     sub_dir: "permissions",
-    src: "co.aospa.systemui.xml",
+    src: "org.fortune.systemui.xml",
     filename_from_src: true,
 }
